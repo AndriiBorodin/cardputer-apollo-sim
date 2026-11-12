@@ -6,7 +6,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Manual-brightgreen?logo=github)](https://andriiborodin.github.io/cardputer-apollo-sim/)
 [![PlatformIO](https://img.shields.io/badge/PlatformIO-Build%20Passed-blue?logo=platformio)](platformio.ini)
 [![Hardware](https://img.shields.io/badge/Device-M5Stack%20Cardputer-orange)](https://m5stack.com)
-[![M5Burner](https://img.shields.io/badge/Flash%20Firmware-M5Burner-red)](https://burner.m5stack.com/)
+[![M5Burner](https://img.shields.io/badge/M5Burner-Official%20Firmware-red?logo=m5stack)](https://burner.m5stack.com/share/firmware/4CKUPV)
 
 ---
 
@@ -22,14 +22,21 @@ Explore the full interactive bilingual (**UA / EN**) flight manual directly in y
 
 ---
 
-## 🔥 Quick Flashing via M5Burner & Web Flasher
+## 🔥 Quick Flashing via M5Burner (1-Click Install)
 
-You don't need to install PlatformIO or compile code to play! You can flash the firmware directly via [M5Burner Web](https://burner.m5stack.com/):
+You don't need to install PlatformIO or compile code! The project is officially published on **M5Burner**:
 
-### Method A: Single-File Web Flasher (M5Burner / ESP Web Tools)
+👉 **[Install via M5Burner: Apollo AGC Lunar Flight Simulator](https://burner.m5stack.com/share/firmware/4CKUPV)**
+
+### Method A: M5Burner (Recommended - 1 Click)
+1. Open the official firmware page: **[https://burner.m5stack.com/share/firmware/4CKUPV](https://burner.m5stack.com/share/firmware/4CKUPV)** (or search for `Apollo AGC` in the M5Burner desktop app under Cardputer).
+2. Connect your **M5Stack Cardputer** via USB-C.
+3. Click **Burn** — done!
+
+### Method B: Manual Web Flasher (ESP Web Tools)
 1. Download the merged flash image: [`release/cardputer_apollo_sim_merged_8mb.bin`](release/cardputer_apollo_sim_merged_8mb.bin).
-2. Connect your **M5Stack Cardputer** via USB-C (hold `G0` while plugging in or turning on to enter download mode).
-3. Open [https://burner.m5stack.com/](https://burner.m5stack.com/) or [ESP Web Tools](https://espressif.github.io/esptool-js/).
+2. Connect your Cardputer via USB-C (hold `G0` while plugging in or turning on to enter download mode).
+3. Open [ESP Web Tools](https://espressif.github.io/esptool-js/) or [Web ESPHome](https://web.esphome.io/).
 4. Select `Flash Address: 0x0` and upload `cardputer_apollo_sim_merged_8mb.bin`.
 
 ### Method B: PlatformIO (Build from source)
